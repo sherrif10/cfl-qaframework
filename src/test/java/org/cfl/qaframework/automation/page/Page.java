@@ -525,6 +525,8 @@ public abstract class Page {
 		driver.navigate().refresh();
 	}
 
+	
+
 	public void scrollPageByElement(By by) {
 		try {
 			WebElement element = findElement(by);
