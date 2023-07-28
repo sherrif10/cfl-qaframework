@@ -15,7 +15,7 @@ public class HomePage extends Page {
 	}
 
 	@Override
-	public String getPageUrl() {
+	public String getPageUrl() {mvn test -Dcucumber.filter.tags='@login'
 		return PATH_HOME;
 	}
 
