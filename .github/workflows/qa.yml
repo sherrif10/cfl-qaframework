@@ -1,4 +1,4 @@
-name: OpenELIS QA
+name: cfl qaframework
 on:
   push:
     branches: [main]
@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Checkout openelis qaframework
+      - name: Checkout cfl qaframework
         uses: actions/checkout@v2
         with:
           repository: ${{github.repository}}
@@ -23,7 +23,7 @@ jobs:
       - name: Sleep for 3 minutes
         run: sleep 3m
         shell: bash
-      - name: Run and Publish Openelis QA
+      - name: Run and Publish cfl qaframework
         run: |
           echo "cucumber.publish.enabled=true" > src/test/resources/cucumber.properties
           mvn clean install -DskipTests=true

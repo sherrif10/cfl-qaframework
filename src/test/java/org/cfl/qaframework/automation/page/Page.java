@@ -517,15 +517,12 @@ public abstract class Page {
 	public String readPDFReportFileGenerated(String reportUrl) throws IOException {
 		String pdfUrl = serverUrl + "" + reportUrl;
 		Utils utils = null;
-//		getDriver().get(pdfUrl);
 		return Utils.getPdfContent(pdfUrl);
 	}
 
 	public void refreshPage() {
 		driver.navigate().refresh();
 	}
-
-	
 
 	public void scrollPageByElement(By by) {
 		try {
