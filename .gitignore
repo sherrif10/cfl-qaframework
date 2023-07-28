@@ -1,0 +1,9 @@
+.project
+.settings/
+.vscode/
+.idea/
+qaframework.iml
+target/
+.classpath
+.vscode
+.factorypath
